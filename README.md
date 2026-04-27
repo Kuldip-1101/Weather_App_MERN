@@ -60,6 +60,12 @@ npm run build
 
 This creates an optimized production build in the `build/` folder.
 
+## Deployment
+
+The app is deployed on GitHub Pages:
+
+https://kuldip-1101.github.io/Weather_App_MERN/
+
 ## Project Structure
 
 ```
