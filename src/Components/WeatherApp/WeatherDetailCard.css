@@ -1,0 +1,209 @@
+/* Weather detail card component styling */
+.detail-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px; /* Reduced gap to give more space for text */
+  padding: 16px 14px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  min-height: 80px;
+}
+
+/* Shimmer effect on hover */
+.detail-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+/* Hover effects for the card */
+.detail-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.detail-card:hover::before {
+  left: 100%;
+}
+
+.detail-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(240, 245, 250, 0.95) 100%
+  );
+  border-radius: 16px;
+  font-size: 24px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.detail-card:hover .detail-icon {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.detail-icon img {
+  width: 28px;
+  height: 28px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  opacity: 1;
+}
+
+/* Card content area */
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.detail-value {
+  font-size: 16px; /* Slightly reduced font size for better fit */
+  font-weight: 900;
+  color: #000000;
+  line-height: 1.2;
+  text-shadow:
+    0 2px 4px rgba(255, 255, 255, 0.9),
+    0 4px 8px rgba(255, 255, 255, 0.8);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.detail-label {
+  font-size: 11px;
+  color: #1a1a1a;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px; /* Reduced letter spacing to prevent overflow */
+  text-shadow:
+    0 1px 2px rgba(255, 255, 255, 0.9),
+    0 2px 4px rgba(255, 255, 255, 0.8);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.detail-sub {
+  font-size: 9px;
+  color: #333333;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.detail-sub {
+  font-size: 9px;
+  color: #333333;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+  text-shadow:
+    0 1px 2px rgba(255, 255, 255, 0.9),
+    0 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+  .detail-card {
+    padding: 14px 12px;
+  }
+
+  .detail-value {
+    font-size: 16px;
+  }
+
+  .detail-label {
+    font-size: 10px;
+  }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+  .detail-card {
+    padding: 10px 8px;
+    gap: 6px;
+  }
+
+  .detail-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  .detail-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .detail-value {
+    font-size: 14px;
+  }
+
+  .detail-label {
+    font-size: 9px;
+  }
+
+  .detail-sub {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .detail-card {
+    padding: 10px 8px;
+    gap: 8px;
+  }
+
+  .detail-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  .detail-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .detail-value {
+    font-size: 14px;
+  }
+
+  .detail-label {
+    font-size: 10px;
+  }
+
+  .detail-sub {
+    font-size: 9px;
+  }
+}
