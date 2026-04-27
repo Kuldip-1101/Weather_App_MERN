@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Weather_App_MERN/static/css/main.d836408a.css",
+    "main.js": "/Weather_App_MERN/static/js/main.fd47064e.js",
+    "static/js/787.d9312eb8.chunk.js": "/Weather_App_MERN/static/js/787.d9312eb8.chunk.js",
+    "static/media/cloud.png": "/Weather_App_MERN/static/media/cloud.20f353f873a9b27949a9.png",
+    "index.html": "/Weather_App_MERN/index.html",
+    "main.d836408a.css.map": "/Weather_App_MERN/static/css/main.d836408a.css.map",
+    "main.fd47064e.js.map": "/Weather_App_MERN/static/js/main.fd47064e.js.map",
+    "787.d9312eb8.chunk.js.map": "/Weather_App_MERN/static/js/787.d9312eb8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d836408a.css",
+    "static/js/main.fd47064e.js"
+  ]
+}
