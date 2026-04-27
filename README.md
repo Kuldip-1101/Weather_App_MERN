@@ -107,7 +107,3 @@ https://api.openweathermap.org/data/2.5/weather?q={city}&units=Metric&appid={API
 ```
 
 Enjoy checking the weather! 🌤️
-
-```
-
-```
